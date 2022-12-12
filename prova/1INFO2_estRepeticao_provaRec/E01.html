@@ -1,0 +1,25 @@
+<script>
+    //PROBLEMA
+    /*
+    O dono de um veículo precisa trocar os pneus de seu carro. Para isso, fez uma pesquisa de preços em diversas lojas, sendo que os preços estão na lista abaixo:
+    let precoPneus = [299, 390, 349.90, 439.90, 399.90, 389.49];
+    No final do programa, peça para apresentar qual foi o pneu mais caro que foi orçado e o pneu mais barato.
+    Considerando que deverão ser trocadas os quatro pneus do veículo, apresente também o custo total da compra, baseando-se no preço do pneu mais barato.
+    */
+
+    //ENTRADA
+
+    let precoPneus = [299, 390, 349.90, 439.90, 399.90, 389.49];
+
+    //PROCESSAMENTO
+
+    const pneuCaro = precoPneus.sort((a, b) => b-a)[0];
+    const pneuBarato = precoPneus.sort((a, b) => a-b)[0];
+    const precoTotal = pneuBarato * 4;
+
+
+    //SAÍDA
+
+    document.write(`o pneu mais barato foi ${pneuBarato} e o mais caro foi ${pneuCaro} e o total do mais barato foi ${precoTotal}`);
+
+</script>
